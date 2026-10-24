@@ -5,7 +5,9 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "sandevistan.refmap.json",
   "mixins": [],
-  "client": [],
+  "client": [
+    "ClientLevelMixin"
+  ],
   "server": [],
   "injectors": {
     "defaultRequire": 1
