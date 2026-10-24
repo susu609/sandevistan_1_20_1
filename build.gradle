@@ -47,12 +47,13 @@ minecraft {
 
         client {
             workingDirectory project.file('run-client1')
-            args '--username', 'Dev1'
         }
 
-        // Not a child of `client`: a parent's args would be kept and the
-        // second --username would clash with the first one.
+        // A child of `client` inherits its JVM args. Its own --username is
+        // added after the parent's, so `client` takes no --username and keeps
+        // Minecraft's default name.
         client2 {
+            parent minecraft.runs.client
             workingDirectory project.file('run-client2')
             args '--username', 'Dev2'
         }
