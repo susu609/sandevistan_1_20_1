@@ -47,7 +47,11 @@ public final class SandevistanEffect extends MobEffect {
                     10, 3, false, false, false));
         }
 
-        level.sendParticles(ParticleTypes.END_ROD, entity.getX(),
-                entity.getY(0.5D), entity.getZ(), 3, 0.2D, 0.4D, 0.2D, 0.01D);
+        // Every other tick is enough for a trail and halves the packets.
+        if (entity.tickCount % 2 == 0) {
+            level.sendParticles(ParticleTypes.END_ROD, entity.getX(),
+                    entity.getY(0.5D), entity.getZ(), 3, 0.2D, 0.4D, 0.2D,
+                    0.01D);
+        }
     }
 }

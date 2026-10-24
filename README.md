@@ -3,7 +3,7 @@
 A small Forge mod based on SuForgeTemplate. Right-click the **Sandevistan** item
 (Tools and Utilities tab) to activate it:
 
-- for 6 seconds you move at double speed, and a cyan trail of particles follows you;
+- for 6 seconds you move at double speed, and a white trail of particles follows you;
 - hostile mobs within 10 blocks are slowed while it lasts;
 - the item goes on a 20-second cooldown.
 
