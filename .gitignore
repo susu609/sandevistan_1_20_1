@@ -1,0 +1,17 @@
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+*.class
+*.log
+*.jar
+*.zip
+.gradle/
+build/
+**/build/
+run/
+runs/
+run-client1/
+run-client2/
+!gradle-wrapper.jar

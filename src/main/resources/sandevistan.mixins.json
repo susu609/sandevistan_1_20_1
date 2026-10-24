@@ -1,0 +1,13 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "net.susu609.sandevistan.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "sandevistan.refmap.json",
+  "mixins": [],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
